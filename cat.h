@@ -24,6 +24,9 @@ public:
 private slots:
     void camera_clicked();
     void getFrame();
+    void getROI();
+    IplImage* get_ipl_roi(IplImage* src, CvRect rect);
+
 
 private:
     Ui::cat *ui;

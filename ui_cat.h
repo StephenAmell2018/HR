@@ -29,10 +29,10 @@ class Ui_cat
 public:
     QWidget *centralWidget;
     QPushButton *camera;
-    QPushButton *pushButton_2;
+    QPushButton *roi;
     QPushButton *pushButton_3;
     QLabel *label;
-    QLabel *label_2;
+    QLabel *label2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -47,18 +47,18 @@ public:
         camera = new QPushButton(centralWidget);
         camera->setObjectName(QStringLiteral("camera"));
         camera->setGeometry(QRect(20, 560, 108, 32));
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(170, 560, 113, 32));
+        roi = new QPushButton(centralWidget);
+        roi->setObjectName(QStringLiteral("roi"));
+        roi->setGeometry(QRect(170, 560, 113, 32));
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(320, 560, 113, 32));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(0, 0, 421, 351));
-        label_2 = new QLabel(centralWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(500, 10, 441, 351));
+        label2 = new QLabel(centralWidget);
+        label2->setObjectName(QStringLiteral("label2"));
+        label2->setGeometry(QRect(500, 10, 441, 351));
         cat->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(cat);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -80,10 +80,10 @@ public:
     {
         cat->setWindowTitle(QApplication::translate("cat", "cat", nullptr));
         camera->setText(QApplication::translate("cat", "start_show", nullptr));
-        pushButton_2->setText(QApplication::translate("cat", "start_calc", nullptr));
+        roi->setText(QApplication::translate("cat", "start_calc", nullptr));
         pushButton_3->setText(QApplication::translate("cat", "end_prog", nullptr));
         label->setText(QApplication::translate("cat", "<html><head/><body><p><span style=\" font-size:24pt; color:#21ff06;\">origin</span></p></body></html>", nullptr));
-        label_2->setText(QApplication::translate("cat", "<html><head/><body><p><span style=\" font-size:24pt;\">interst</span></p></body></html>", nullptr));
+        label2->setText(QApplication::translate("cat", "<html><head/><body><p><span style=\" font-size:24pt;\">interst</span></p></body></html>", nullptr));
     } // retranslateUi
 
 };
